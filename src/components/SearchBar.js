@@ -1,12 +1,12 @@
 import React from 'react';
-import { View,Text,StyleSheet } from 'react-native';
-import {Feather} from '@expo/vector-icons';
+import { View,StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 import { TextInput } from 'react-native-gesture-handler';
 
 const SearchBar=({term,onTermChange,onTermSubmit})=>{
     return(
     <View style={styles.backgroundStyle}>
-        <Feather name="search" style={styles.iconStyle}/> 
+        <Icon name="search" style={styles.iconStyle}/>
         <TextInput 
         style={styles.inputStyle} 
         placeholder='Search' 
@@ -33,6 +33,7 @@ const styles=StyleSheet.create({
         fontSize:18,    
     },
     iconStyle:{
+        color:'blue',
         fontSize:35,
         alignSelf:'center',
         marginHorizontal:15,
